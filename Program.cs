@@ -278,23 +278,18 @@ class Cope
 
     static void Main(string[] args)
     {
-        bool testing = true;
+        bool testing = false;
 
         if (testing == false)
-        {	
-
-            Random rnd = new Random();
-
+        {
             while (true)
             {
-                int r = rnd.Next(0,7);
                 while (running == false)
                 {
-                    r = rnd.Next(0,7);
                     foreach (Thread t in threads)
     				{
                         Console.WriteLine(t.IsAlive);
-    					if(r == rnd.Next(0,7)){running=true;t.Start();break;}
+    					if(rnd.Next(0,7) == rnd.Next(0,7)){running=true;t.Start();break;}
     				}
                 }
                 Thread.Sleep(60000*5);
