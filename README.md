@@ -3,10 +3,6 @@ meu joke virus que faz coiso
 
 ## payloads
 
-#### payloads genericos
-- derreter a tela
-- tirar o texto das janelas
-
 #### payloads de mouse
 - tremer o mouse
 - tremer o mouse muito
@@ -14,6 +10,8 @@ meu joke virus que faz coiso
 - fazer o mouse ficar lento
 
 #### payloads visuais
+- derreter a tela
+- tirar o texto das janelas
 - inverter as cores do monitor muito rapido
 - fazer uma espiral com a tela
 - fazer um círculo com a tela
