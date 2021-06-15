@@ -150,7 +150,7 @@ class Cope
         if(running==false){return;}
     }
 
-    static void screenCrazy()
+    static void ScreenCrazy()
     {
         double offset = 0;
         double offset2 = 0;
@@ -168,7 +168,7 @@ class Cope
         if(running==false){return;}
     }
 	
-    static void screenMoveY()
+    static void ScreenMoveY()
     {
         double offset = 0;
         while (running)
@@ -183,7 +183,7 @@ class Cope
         if(running==false){return;}
     }
 	
-    static void screenMoveX()
+    static void ScreenMoveX()
     {
         double offset = 0;
         while (running)
@@ -198,7 +198,7 @@ class Cope
         if(running==false){return;}
     }
 
-    static void screenMoveY2()
+    static void ScreenMoveY2()
     {
         double offset = 0;
         double offset2 = 0;
@@ -215,7 +215,7 @@ class Cope
         if(running==false){return;}
     }
 	
-    static void screenMoveX2()
+    static void ScreenMoveX2()
     {
         double offset = 0;
         double offset2 = 0;
@@ -232,7 +232,7 @@ class Cope
         if(running==false){return;}
     }
 
-    static void screenCircle()
+    static void ScreenCircle()
     {
         double offset = 0;
         double offset2 = 0;
@@ -267,8 +267,13 @@ class Cope
 		new Thread(ChangeText),
 		new Thread(CursorShake),
 		new Thread(CursorCrazy),
-        new Thread(CursorCrazy2),
-		new Thread(CursorSlow)
+        	new Thread(CursorCrazy2),
+		new Thread(CursorSlow),
+		new Thread(ScreenCrazy),
+		new Thread(ScreenMoveX),
+		new Thread(ScreenMoveY),
+		new Thread(ScreenMoveX2),
+		new Thread(ScreenMoveY2)
 	};
 
     static void Main(string[] args)
