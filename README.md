@@ -3,6 +3,8 @@ meu joke virus que faz coiso
 
 ## payloads
 
+a cada 5 minutos um payload executa com uma pausa de 30 segundos
+
 #### payloads de mouse
 - tremer o mouse
 - tremer o mouse muito
