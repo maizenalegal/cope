@@ -23,6 +23,6 @@ a cada 5 minutos um payload executa com uma pausa de 30 segundos
 - fazer o monitor mover em y so que estranho
 
 #### payloads que eu quero botar / esqueci de botar
-
+- fazer o mouse rodar em círculo
 - desativar o gerenciador de tarefas
 - mudar a posição dos ícones do desktop
