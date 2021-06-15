@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Threading;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -88,7 +88,7 @@ class Cope
 			IntPtr hdc = CreateDC("DISPLAY", null, null, null);
 			StretchBlt(hdc, 0, 0, width, height, hdc, 0, 0, width, height, 0x00550009);
 			Thread.Sleep(delay);
-			delay = 1000;
+			delay = delay/2;
 		}
         if(running==false){return;}
 	}
@@ -267,9 +267,10 @@ class Cope
 		new Thread(ChangeText),
 		new Thread(CursorShake),
 		new Thread(CursorCrazy),
-        	new Thread(CursorCrazy2),
+        new Thread(CursorCrazy2),
 		new Thread(CursorSlow),
 		new Thread(ScreenCrazy),
+		new Thread(ScreenCircle),
 		new Thread(ScreenMoveX),
 		new Thread(ScreenMoveY),
 		new Thread(ScreenMoveX2),
@@ -288,8 +289,7 @@ class Cope
                 {
                     foreach (Thread t in threads)
     				{
-                        Console.WriteLine(t.IsAlive);
-    					if(rnd.Next(0,7) == rnd.Next(0,7)){running=true;t.Start();break;}
+    					if(rnd.Next(0,6) == rnd.Next(0,6)){running=true;t.Start();break;}
     				}
                 }
                 Thread.Sleep(60000*5);
@@ -304,7 +304,7 @@ class Cope
         else
         {
             running = true;
-            screenMoveY2();
+            Invert();
         }
 
 
