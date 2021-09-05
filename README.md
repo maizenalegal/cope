@@ -17,6 +17,5 @@ a cada 5 minutos um payload executa com uma pausa de 30 segundos
 - fazer o monitor mover
 
 #### depois eu faço ok
-- fazer o mouse rodar em círculo
-- desativar o gerenciador de tarefas
+- desativar o gerenciador de tarefas 
 - mudar a posição dos ícones do desktop
